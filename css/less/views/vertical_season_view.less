@@ -1,0 +1,53 @@
+.vertical-season-display {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .vertical-season-row {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 0px 20px;
+    padding: 0px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    ul {
+      list-style-type: none;
+      li {
+        list-style-image: none;
+        border-top: 1px solid #dddddd;
+        margin: 0px;
+      }
+    }
+    .views-field {
+      width: 100%;
+    }
+    .season-title {
+      display: flex;
+      justify-content: center;
+    }
+    .vertical-book-col.span6 {
+      display: flex;
+      min-height: 0px;
+      padding: 0px;
+      flex-direction: column;
+      &.right {
+        * {
+          flex-basis: 25%;
+        }
+      }
+      &.left {
+        align-items: center;
+        .field-items {
+          flex-basis: 66%;
+        }
+      }
+      * {
+        background-color: transparent !important; // forgive me father for I have sinned
+      }
+    }
+  }
+}
