@@ -1,0 +1,58 @@
+.vertical-season-display {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .vertical-season-row {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 0px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    border-radius: 5px;
+    ul {
+      list-style-type: none;
+      li {
+        list-style-image: none;
+        border-top: 1px solid #dddddd;
+        margin: 0px;
+      }
+    }
+    .views-field {
+      width: 100%;
+    }
+    .season-title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: #00859B;
+      color: white;
+      margin: 0px;
+      padding: 10px 0px;
+      border-radius: 2px 2px 0px 0px;
+      a {
+        color: white;
+      }
+    }
+    .vertical-book-col.span6 {
+      display: flex;
+      min-height: 0px;
+      padding: 0px;
+      flex-direction: column;
+      &.right {
+        * {
+          flex-basis: 25%;
+        }
+      }
+      &.left {
+        align-items: center;
+        .field-items {
+          flex-basis: 66%;
+        }
+      }
+    }
+  }
+}
