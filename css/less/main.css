@@ -1217,7 +1217,7 @@ ul.nice-menu-down li ul li ul {
   justify-content: center;
 }
 .vertical-season-display .vertical-season-row {
-  width: auto;
+  width: 48%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1264,4 +1264,16 @@ ul.nice-menu-down li ul li ul {
 }
 .vertical-season-display .vertical-season-row .vertical-book-col.span6.left .field-items {
   flex-basis: 66%;
+}
+.book-carousel .jcarousel-container .jcarousel-prev,
+.book-carousel .jcarousel-container .jcarousel-next {
+  top: 135px;
+  height: 52px;
+  width: 18px;
+}
+.book-carousel .book-carousel-title {
+  min-height: 50px;
+}
+.book-carousel .book-carousel-title * {
+  text-align: center;
 }
