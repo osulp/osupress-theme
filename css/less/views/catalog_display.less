@@ -1,0 +1,32 @@
+.catalog-display {
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  .catalog-row {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    margin-bottom: 5px;
+    &:first-child {
+      border-bottom: 1px solid #dddddd;
+    }
+    .catalog-cover-image {
+      height: 200px;
+      border: 1px solid #e0e0e0;
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      align-items: center;
+      &.left {
+        padding: 10px 0px;
+      }
+      a[href="catalog/"] {
+        font-size: 16px;
+        font-style: italic;
+      }
+    }
+  }
+}

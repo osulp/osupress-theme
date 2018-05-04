@@ -1,0 +1,35 @@
+.book-grid {
+  height: 100%;
+  .book-grid-header {
+    // &:extend(.box-shadow);
+    border-bottom: 4px solid #dc4405;
+    text-align: end;
+    padding-right: 5px;
+    margin-right: 30px;
+  }
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    .book-grid-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 210px;
+      padding: 2px;
+      .title {
+        min-height: 60px;
+        text-align: center;
+        max-width: 90%;
+        a {
+          text-align: center;
+        }
+      }
+      .image {
+        img {
+          height: 180px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
