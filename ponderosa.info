@@ -62,3 +62,4 @@ settings[hide_breadcrumbs] = 0
 settings[hide_book_nav] = 0
 settings[hide_terms] = 0
 
+plugins[panels][layouts] = layouts

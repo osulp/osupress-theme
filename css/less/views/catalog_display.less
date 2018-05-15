@@ -29,4 +29,20 @@
       }
     }
   }
+  // small screens
+  @media screen and (max-width: 1100px) {
+    flex-basis: 100%;
+    width: 100%;
+    .view-content {
+      display: flex;
+      flex-direction: row; 
+      .catalog-row {
+        flex-direction: column;
+        border-bottom: 0px;
+        * {
+          flex-basis: auto;
+        }
+      }
+    }
+  }
 }
