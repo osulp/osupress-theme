@@ -532,6 +532,27 @@ a .icon-rss {
 .media.media-element-container {
   margin-top: 0;
 }
+/* Utils import */
+.box-shadow {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+.title-box,
+.side-box .side-box-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #00859B !important;
+  color: white;
+  margin: 0px;
+  padding: 10px 0px;
+  border-radius: 2px 2px 0px 0px;
+}
+.title-box * {
+  color: white !important;
+}
+.row-fluid {
+  margin-bottom: 50px;
+}
 /* Components import */
 /* tablist module styling */
 .quicktabs_main.quicktabs-style-basic {
@@ -1185,22 +1206,18 @@ ul.nice-menu-down li ul li ul {
   background: none repeat scroll 0 0 #c34500 !important;
   height: 100% !important;
 }
-/* Utils import */
-.box-shadow {
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+.side-box {
+  border: 1px solid #dddddd;
 }
-.title-box {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #00859B !important;
+.side-box .side-box-title * {
   color: white;
-  margin: 0px;
-  padding: 10px 0px;
-  border-radius: 2px 2px 0px 0px;
 }
-.title-box * {
-  color: white !important;
+.side-box .side-box-item {
+  padding: 20px 40px;
+  border-top: 1px solid #dddddd;
+}
+h2.main-page-header {
+  border-bottom: 4px solid #dc4405;
 }
 /* Views import */
 .blog-entry {
@@ -1425,4 +1442,8 @@ ul.nice-menu-down li ul li ul {
 }
 .search-bar .search-button .icon-search {
   vertical-align: baseline;
+}
+/* Nodes import */
+body.node-type-press-book .title {
+  display: none;
 }

@@ -2,10 +2,15 @@
 
 function ponderosa_preprocess(&$variables, $hook) {
   if ($variables['type'] == 'press_book') {
-    kpr($variables);
+    // dpm($variables);
+    //$variables['title'] = NULL;
   }
 }
 
+function ponderosa_page_alter(&$page) {
+  // dpm($page);
+}
+// function ponderosa_node
 function ponderosa_field__press_book($variables) {
  $output = '';
 
@@ -29,7 +34,7 @@ function ponderosa_field__field_press_book_authors_editors__press_book($variable
   foreach($variables['items'] as $delta => $item) {
     $items[] = drupal_render($item);
   }
-  $output .= '<div class="field-items"' . $variables['content_attributes'] . '> By ' . implode(', ', $items) . '</div>';
+  $output .= '<div class="field-items"' . $variables['content_attributes'] . '> <div class="field-item"> By ' . implode(', ', $items) . '</div></div>';
 
   return $output;
 }
