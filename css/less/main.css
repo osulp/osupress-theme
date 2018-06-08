@@ -541,7 +541,7 @@ a .icon-rss {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #00859B !important;
+  background-color: #d3832b;
   color: white;
   margin: 0px;
   padding: 10px 0px;
@@ -552,6 +552,12 @@ a .icon-rss {
 }
 .row-fluid {
   margin-bottom: 50px;
+}
+html.pine h2 {
+  color: #c34500;
+}
+html.pine h3 a {
+  color: #006a8e;
 }
 /* Components import */
 /* tablist module styling */
@@ -1217,7 +1223,7 @@ ul.nice-menu-down li ul li ul {
   border-top: 1px solid #dddddd;
 }
 h2.main-page-header {
-  border-bottom: 4px solid #dc4405;
+  border-bottom: 4px solid #c34500;
 }
 /* Views import */
 .blog-entry {
@@ -1321,7 +1327,7 @@ h2.main-page-header {
   height: 100%;
 }
 .book-grid .book-grid-header {
-  border-bottom: 4px solid #dc4405;
+  border-bottom: 4px solid #c34500;
   text-align: end;
   padding-right: 5px;
   margin-right: 30px;
@@ -1426,9 +1432,8 @@ h2.main-page-header {
 }
 .search-bar input.search-input {
   line-height: 40px;
-  border: 1px solid lightgrey;
   font-size: 24px;
-  width: 400px;
+  width: 500px;
   padding-left: 10px;
   border-radius: 6px 2px 2px 6px;
   height: 40px;
@@ -1437,11 +1442,25 @@ h2.main-page-header {
   line-height: 40px;
   border-radius: 2px 6px 6px 2px;
   padding: 4px 50px;
-  background-color: #dc4405;
+  background-color: #c34500;
   color: white;
+  border: 0;
 }
 .search-bar .search-button .icon-search {
   vertical-align: baseline;
+}
+#full-top {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: url(../images/eastern_or_cropped_more.png);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Nodes import */
 body.node-type-press-book .title {

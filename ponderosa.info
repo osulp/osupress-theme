@@ -48,14 +48,14 @@ features[] = main_menu
 features[] = secondary_menu
 
 ; Theme variants
-default_variant     = 'doug_fir'
-variants[doug_fir]  = 'Doug Fir'
-variants[pine]      = 'Pine'
-variants[classic]   = 'OSU Standard'
-variants[marine]    = 'Marine'
-variants[science]   = 'Science'
-variants[pharmacy]  = 'Orange'
-variants[agsci]     = 'Agriculture'
+; default_variant     = 'doug_fir'
+; variants[doug_fir]  = 'Doug Fir'
+; variants[pine]      = 'Pine'
+; variants[classic]   = 'OSU Standard'
+; variants[marine]    = 'Marine'
+; variants[science]   = 'Science'
+; variants[pharmacy]  = 'Orange'
+; variants[agsci]     = 'Agriculture'
 
 settings[responsive] = 1
 settings[hide_breadcrumbs] = 0

@@ -3,6 +3,9 @@
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
   <div class="row-fluid responsive">
+    <div class="span4 sm-12">
+      <img src="<?php print file_create_url($content['field_press_book_cover']['#items'][0][uri]); ?>">
+    </div>
     <div class="span7 sm-12">
       <h2 class="main-page-header"><?php print render($title); ?></h2>
       <div class="row-fluid">
@@ -28,9 +31,6 @@
           <?php endif ?>
         </div>
       </div>
-    </div>
-    <div class="span4 sm-12">
-      <img src="<?php print file_create_url($content['field_press_book_cover']['#items'][0][uri]); ?>">
     </div>
   </div>
   <div class="row-fluid responsive">
