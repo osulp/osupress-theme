@@ -1413,6 +1413,22 @@ h2.main-page-header {
     flex-basis: auto;
   }
 }
+.blog-teaser {
+  display: flex;
+  flex-direction: row;
+}
+.blog-teaser .view-header {
+  margin-right: 40px;
+}
+.blog-teaser .view-content {
+  display: flex;
+  flex-direction: row;
+}
+.blog-teaser .view-content .blog-teaser-row {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
 /* Layouts import */
 .row-fluid.responsive {
   display: flex;
@@ -1433,7 +1449,7 @@ h2.main-page-header {
 .search-bar input.search-input {
   line-height: 40px;
   font-size: 24px;
-  width: 500px;
+  width: 400px;
   padding-left: 10px;
   border-radius: 6px 2px 2px 6px;
   height: 40px;
