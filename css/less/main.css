@@ -553,6 +553,19 @@ a .icon-rss {
 .row-fluid {
   margin-bottom: 50px;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 html.pine h2 {
   color: #c34500;
 }
@@ -1253,6 +1266,11 @@ h2.main-page-header {
 .vertical-book-content .column.right * {
   flex-basis: 25%;
 }
+.vertical-season-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .vertical-season-display .view-content {
   display: flex;
   flex-direction: row;
@@ -1415,7 +1433,7 @@ h2.main-page-header {
 }
 .blog-teaser {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .blog-teaser .view-header {
   margin-right: 40px;
@@ -1428,6 +1446,27 @@ h2.main-page-header {
   display: flex;
   flex-direction: column;
   padding: 10px 15px;
+}
+.book-display-set-grid .press-book-cover-and-title {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.book-display-set-grid .press-book-cover-and-title .image {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-display-set-grid .press-book-cover-and-title .image .book-cover {
+  display: block;
+  height: 180px;
+  width: auto;
+}
+.book-display-set-grid .press-book-cover-and-title a {
+  text-align: center;
 }
 /* Layouts import */
 .row-fluid.responsive {
