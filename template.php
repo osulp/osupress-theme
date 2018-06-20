@@ -1,16 +1,11 @@
 <?php
 
 function ponderosa_preprocess(&$variables, $hook) {
-  if ($variables['type'] == 'press_book') {
-    // dpm($variables);
-    //$variables['title'] = NULL;
-  }
 }
 
 function ponderosa_page_alter(&$page) {
-  // dpm($page);
 }
-// function ponderosa_node
+
 function ponderosa_field__press_book($variables) {
  $output = '';
 

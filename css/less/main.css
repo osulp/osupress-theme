@@ -1235,7 +1235,8 @@ ul.nice-menu-down li ul li ul {
   padding: 20px 40px;
   border-top: 1px solid #dddddd;
 }
-h2.main-page-header {
+h2.main-page-header,
+h2.title {
   border-bottom: 4px solid #c34500;
 }
 /* Views import */
