@@ -1235,6 +1235,24 @@ ul.nice-menu-down li ul li ul {
   padding: 20px 40px;
   border-top: 1px solid #dddddd;
 }
+.pine .block.side-box {
+  border: 1px solid #dddddd;
+}
+.pine .block.side-box .side-box-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #d3832b;
+  color: white;
+  margin: 0px;
+  padding: 20px 0px;
+  border-radius: 2px 2px 0px 0px;
+  font-size: 36px !important;
+  text-transform: none;
+}
+.pine .block.side-box .side-box-title * {
+  color: white;
+}
 h2.main-page-header,
 h2.title {
   border-bottom: 4px solid #c34500;
