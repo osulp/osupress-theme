@@ -1460,11 +1460,20 @@ h2.title {
 .blog-teaser .view-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .blog-teaser .view-content .blog-teaser-row {
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   padding: 10px 15px;
+}
+.blog-teaser .view-content .views-row-1 {
+  flex-basis: 40%;
+}
+.blog-teaser .view-content .views-row-2,
+.blog-teaser .view-content .views-row-3 {
+  flex-basis: 25%;
 }
 .book-display-set-grid .press-book-cover-and-title {
   width: 200px;
