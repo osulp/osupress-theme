@@ -1,4 +1,4 @@
-/**
+/*
  * @file main.css
  *
  * OSU Standard Stylesheet
@@ -7,6 +7,7 @@
  * Oregon State University
  *
  */
+
 @import "../../bootstrap/less/variables.less";
 @import "../../bootstrap/less/mixins.less";
 
@@ -276,7 +277,7 @@ div.content {
 }
 
 blockquote {
-  background: url('../../images/blockquote.png') center left no-repeat;
+  background: url('../../images/blockquote.jpg') center left no-repeat;
   font-size: 110%;
   padding-left: 4em;
   min-height: 60px;
@@ -549,6 +550,23 @@ a .icon-rss {
   margin-top: 0; // overwrites bootstrap 2 class that was being added to embed media
 }
 
+
+// // // // // //
+// // // Where Christa started to make changes to the theme // // //
+// // // // // //
+
+
+//Adds the background to the page
+#page-wrapper{
+  background: linear-gradient(#ffffff00, #e7ddd3);
+}
+
+//Removes the default search icon that comes with OSU theme.
+#search-link{
+  display: none;
+}
+
+
 /* Utils import */
 @import "utils/variables.less";
 @import "utils/utils.less";
@@ -577,6 +595,7 @@ a .icon-rss {
 @import "views/catalog_display.less";
 @import "views/horizontal_blog_teaser.less";
 @import "views/book_display_set_grid.less";
+@import "views/titles.less";
 
 /* Layouts import */
 @import "layouts/bootstrap_responsive.less";

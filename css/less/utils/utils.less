@@ -16,9 +16,64 @@
   }
 }
 
-.row-fluid {
-  margin-bottom: 50px;
+// .row-fluid {
+//   margin-bottom: 50px;
+// }
+.row-fluid{
+  .span12{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    background: white;
+    margin-bottom: 15px;
+    .content{
+      margin: 10px;
+      .view-content{
+        margin-left: 10px;
+        h2.main-page-header{
+          border-bottom: 4px solid @pine-stand;
+          //color: @pine-stand !important;
+        }
+      }
+      .views-exposed-widget #edit-submit-search-results-page{
+          background: @pine-stand;
+          &:hover{
+            background: darken(@pine-stand, 10%);
+          }
+      }
+      #edit-actions{
+        #edit-submit{
+          background: @pine-stand;
+          &:hover{
+            background: darken(@pine-stand, 10%);
+          }       
+        }
+      }
+    }
+    #reviews{
+      color: white;
+    }
+    h2, .title, #page-title{
+      color: @pine-stand;
+      border-bottom: 4px solid @pine-stand;
+    }
+    .view-header{
+      h3{
+        color: #555653;
+        font-style: italic;
+      }
+    }
+    img{
+     // margin-left: 15px;
+    }
+    a{
+      color: @link-color;
+    }
+    #views-exposed-form-series-list-page-1{
+      display: none;
+    }
+  }
 }
+
 
 .flex-column {
   display: flex;

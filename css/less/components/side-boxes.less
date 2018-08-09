@@ -1,14 +1,29 @@
+@import "../utils/variables.less";
+
+
 .side-box {
   border: 1px solid #dddddd;
+  background: white;
+  a{
+    color: @link-color;
+  }
   .side-box-title {
     &:extend(.title-box);
     * {
       color: white;
+      background: @pine-stand !important;
     }
   }
   .side-box-item {
     padding: 20px 40px;
     border-top: 1px solid #dddddd;
+  }
+  background: white;
+  .side-box-title{
+    background: @pine-stand !important;
+  }
+  a{
+    color: @link-color;
   }
 }
 

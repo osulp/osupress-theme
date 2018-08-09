@@ -1,5 +1,67 @@
+@import "../utils/variables.less";
+
+
 body.node-type-press-book {
   .title {
     display: none;
   }
 }
+
+.page-wrapper{
+  background: black;
+}
+
+
+//Targets content of Press Book pages. - Christa
+.book_content{
+  .span7{
+    h2{
+      //color: @pine-stand;
+      border-bottom: 4px solid @pine-stand;
+    }
+    .field-name-field-press-book-subtitle {
+      color: @pine-stand;
+    }
+    .buy{
+      background: @pine-stand;
+    }
+    .buy:hover{
+      background: darken(@pine-stand, 10%);
+    }
+  }
+  margin-left: .4em;
+  #widerBookDescription{
+    margin-left: 15px;
+  }
+  #details{
+    margin-left: 0px;
+    margin-top: 15px;
+    padding: 5px;
+    background: #e7e7e7;
+    #pressbook_meta{
+      background: #e7e7e7;
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+  }
+
+  .span5{
+    .side-box .box-shadow{
+        .side-box-title{
+        #reviews{
+          color: white;
+          // background: pink;
+        }
+      }
+    }
+  }
+
+}
+
+
+// .row-fluid{
+//   #reviews{
+//     color: white !important; 
+//     border-bottom: 4px solid @pine-stand;
+//   }
+// }

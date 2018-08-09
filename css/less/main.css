@@ -1,4 +1,4 @@
-/**
+/*
  * @file main.css
  *
  * OSU Standard Stylesheet
@@ -46,7 +46,7 @@ html {
   background-color: #252525;
 }
 body {
-  background: url('../../images/bg-pattern.jpg') repeat #f4f2ec;
+  background: url('../../images/bg-pattern.jpg') repeat #e0e0e0;
 }
 #sidebar-first,
 #sidebar-second,
@@ -276,7 +276,7 @@ div.content {
   padding: 0;
 }
 blockquote {
-  background: url('../../images/blockquote.png') center left no-repeat;
+  background: url('../../images/blockquote.jpg') center left no-repeat;
   font-size: 110%;
   padding-left: 4em;
   min-height: 60px;
@@ -361,7 +361,7 @@ ul.contextual-links li a:focus {
 }
 /* New top hat styling */
 #osu-top-hat.new {
-  background: #f4f2ec;
+  background: #e0e0e0;
   height: 87px;
   border-bottom: none;
   position: relative;
@@ -532,6 +532,12 @@ a .icon-rss {
 .media.media-element-container {
   margin-top: 0;
 }
+#page-wrapper {
+  background: linear-gradient(#ffffff00 0, #e7ddd3);
+}
+#search-link {
+  display: none;
+}
 /* Utils import */
 .box-shadow {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
@@ -550,8 +556,51 @@ a .icon-rss {
 .title-box * {
   color: white !important;
 }
-.row-fluid {
-  margin-bottom: 50px;
+.row-fluid .span12 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+  background: white;
+  margin-bottom: 15px;
+}
+.row-fluid .span12 .content {
+  margin: 10px;
+}
+.row-fluid .span12 .content .view-content {
+  margin-left: 10px;
+}
+.row-fluid .span12 .content .view-content h2.main-page-header {
+  border-bottom: 4px solid #4a773c;
+}
+.row-fluid .span12 .content .views-exposed-widget #edit-submit-search-results-page {
+  background: #4a773c;
+}
+.row-fluid .span12 .content .views-exposed-widget #edit-submit-search-results-page:hover {
+  background: #35552b;
+}
+.row-fluid .span12 .content #edit-actions #edit-submit {
+  background: #4a773c;
+}
+.row-fluid .span12 .content #edit-actions #edit-submit:hover {
+  background: #35552b;
+}
+.row-fluid .span12 #reviews {
+  color: white;
+}
+.row-fluid .span12 h2,
+.row-fluid .span12 .title,
+.row-fluid .span12 #page-title {
+  color: #4a773c;
+  border-bottom: 4px solid #4a773c;
+}
+.row-fluid .span12 .view-header h3 {
+  color: #555653;
+  font-style: italic;
+}
+.row-fluid .span12 a {
+  color: #614F41;
+}
+.row-fluid .span12 #views-exposed-form-series-list-page-1 {
+  display: none;
 }
 .flex-column {
   display: flex;
@@ -1227,13 +1276,24 @@ ul.nice-menu-down li ul li ul {
 }
 .side-box {
   border: 1px solid #dddddd;
+  background: white;
+}
+.side-box a {
+  color: #614F41;
 }
 .side-box .side-box-title * {
   color: white;
+  background: #4a773c !important;
 }
 .side-box .side-box-item {
   padding: 20px 40px;
   border-top: 1px solid #dddddd;
+}
+.side-box .side-box-title {
+  background: #4a773c !important;
+}
+.side-box a {
+  color: #614F41;
 }
 .pine .block.side-box {
   border: 1px solid #dddddd;
@@ -1260,6 +1320,19 @@ h2.title {
 /* Views import */
 .blog-entry {
   padding: 5px;
+}
+.view-horizontal-blog-teaser .main-page-header {
+  color: #4a773c;
+  border-bottom: 4px solid #4a773c;
+}
+.view-horizontal-blog-teaser h2 {
+  color: #4a773c;
+}
+.view-horizontal-blog-teaser a {
+  color: #614F41;
+}
+.view-horizontal-blog-teaser .blog-teaser-title a {
+  color: #614F41;
 }
 .vertical-book-display {
   display: flex;
@@ -1304,6 +1377,12 @@ h2.title {
   padding: 0px;
   border-radius: 5px;
 }
+.vertical-season-display .vertical-season-row h2 {
+  background: #4a773c;
+}
+.vertical-season-display .vertical-season-row h3 a {
+  color: #614F41 !important;
+}
 .vertical-season-display .vertical-season-row ul {
   list-style-type: none;
 }
@@ -1329,6 +1408,9 @@ h2.title {
 }
 .vertical-season-display .vertical-season-row .vertical-book-col.span6.left .field-items {
   flex-basis: 66%;
+}
+.vertical-season-display .vertical-season-row .vertical-book-col.span6.left .field-items a {
+  color: #614F41;
 }
 @media screen and (max-width: 1000px) {
   .vertical-season-display .view-content {
@@ -1402,6 +1484,9 @@ h2.title {
   .book-grid .book-grid-header {
     text-align: center;
   }
+}
+.catalog-display .title-box {
+  background: #4a773c;
 }
 .catalog-display .title {
   display: flex;
@@ -1496,6 +1581,12 @@ h2.title {
 .book-display-set-grid .press-book-cover-and-title a {
   text-align: center;
 }
+.alpha-pagination ul {
+  font-size: 1.1em;
+}
+.alpha-pagination ul li {
+  border-bottom: gray 1px solid !important;
+}
 /* Layouts import */
 .row-fluid.responsive {
   display: flex;
@@ -1525,7 +1616,7 @@ h2.title {
   line-height: 40px;
   border-radius: 2px 6px 6px 2px;
   padding: 4px 50px;
-  background-color: #c34500;
+  background-color: #4a773c;
   color: white;
   border: 0;
 }
@@ -1545,7 +1636,49 @@ h2.title {
   align-items: center;
   justify-content: center;
 }
+#block-block-5 {
+  border: 4px solid #4a773c;
+  border-bottom: 4px solid #4a773c !important;
+}
+#block-block-5 a {
+  color: #614F41;
+}
 /* Nodes import */
 body.node-type-press-book .title {
   display: none;
+}
+.page-wrapper {
+  background: black;
+}
+.book_content {
+  margin-left: .4em;
+}
+.book_content .span7 h2 {
+  border-bottom: 4px solid #4a773c;
+}
+.book_content .span7 .field-name-field-press-book-subtitle {
+  color: #4a773c;
+}
+.book_content .span7 .buy {
+  background: #4a773c;
+}
+.book_content .span7 .buy:hover {
+  background: #35552b;
+}
+.book_content #widerBookDescription {
+  margin-left: 15px;
+}
+.book_content #details {
+  margin-left: 0px;
+  margin-top: 15px;
+  padding: 5px;
+  background: #e7e7e7;
+}
+.book_content #details #pressbook_meta {
+  background: #e7e7e7;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+.book_content .span5 .side-box .box-shadow .side-box-title #reviews {
+  color: white;
 }
