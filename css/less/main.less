@@ -127,10 +127,10 @@ h5 {
     color: #ffffff;
     text-decoration: none;
 }
-.region-sidebar-first > div,
-.region-sidebar-second > div {
-    border-bottom: medium none !important;
-}
+// .region-sidebar-first > div,
+// .region-sidebar-second > div {
+//     border-bottom: medium none !important;
+// }
 
 
 a {
@@ -550,12 +550,6 @@ a .icon-rss {
   margin-top: 0; // overwrites bootstrap 2 class that was being added to embed media
 }
 
-
-// // // // // //
-// // // Where Christa started to make changes to the theme // // //
-// // // // // //
-
-
 //Adds the background to the page
 #page-wrapper{
   background: linear-gradient(#ffffff00, #e7ddd3);
@@ -564,6 +558,32 @@ a .icon-rss {
 //Removes the default search icon that comes with OSU theme.
 #search-link{
   display: none;
+}
+
+/*
+  On the main page, in the main content area there was a 
+  huge amount of space on the top and bottom of the 
+  paragraph region. This targets specifically that area,
+  and removes the exessive space.
+*/
+#main-column{
+  .span12{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    #content{
+      margin-bottom: 0px;
+      .content{
+        margin: 0px;
+        .content{
+          margin: 0px;
+          .span12{
+            margin: 0px;
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -595,13 +615,14 @@ a .icon-rss {
 @import "views/catalog_display.less";
 @import "views/horizontal_blog_teaser.less";
 @import "views/book_display_set_grid.less";
-@import "views/titles.less";
+@import "views/titles-list.less";
 
 /* Layouts import */
 @import "layouts/bootstrap_responsive.less";
 
 /* Blocks import */
 @import "blocks/search.less";
+@import "blocks/shopping.less";
 
 /* Nodes import */
 @import "nodes/press-book.less";
