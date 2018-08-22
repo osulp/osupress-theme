@@ -1,51 +1,64 @@
 .catalog-display {
-  .title-box{
-    background: @pine-stand;
-  }
-  .title {
-    display: flex;
-    justify-content: center;
-  }
-  .catalog-row {
-    width: 100%;
-    padding: 10px 0px;
-    display: flex;
-    margin-bottom: 5px;
-    &:first-child {
-      border-bottom: 1px solid #dddddd;
+    padding-bottom: 0px !important;
+    .title-box{
+      background: @pine-stand;
     }
-    .catalog-cover-image {
-      height: 200px;
-      border: 1px solid #e0e0e0;
-    }
-    .col {
+    .title {
       display: flex;
-      flex-direction: column;
-      flex-basis: 50%;
-      align-items: center;
-      &.left {
-        padding: 10px 0px;
-      }
-      a[href="catalog/"] {
-        font-size: 16px;
-        font-style: italic;
-      }
+      justify-content: center;
+      flex-wrap: nowrap;
     }
-  }
-  // small screens
-  @media screen and (max-width: 1100px) {
-    flex-basis: 100%;
-    width: 100%;
-    .view-content {
+    .catalog-row {
+      width: 100%;
+      padding: 10px 0px;
       display: flex;
-      flex-direction: row; 
-      .catalog-row {
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      a{
+          display: flex;
+          justify-content: center;
+          font-size: 18px;
+      }
+      &:first-child {
+        border-bottom: 1px solid #dddddd;
+      }
+      .catalog-cover-image {
+        height: 250px;
+        border: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: center;
+      }
+      .col {
+        display: flex;
         flex-direction: column;
-        border-bottom: 0px;
-        * {
-          flex-basis: auto;
+        flex-basis: 50%;
+        align-items: center;
+        &.left {
+          padding: 10px 0px;
+        }
+        a[href="catalog/"] {
+          font-size: 16px;
+          font-style: italic;
+        }
+      }
+    }
+    // small screens
+    @media screen and (max-width: 1100px) {
+      flex-basis: 100%;
+      width: 100%;
+      .view-content {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        .catalog-row {
+          flex-direction: column;
+          border-bottom: 0px;
+          * {
+            flex-basis: auto;
+          }
         }
       }
     }
   }
-}
+  
