@@ -1,6 +1,7 @@
 <?php
 
 function ponderosa_preprocess(&$variables, $hook) {
+  //Attempting to make the images that appear to be 
 }
 
 function ponderosa_page_alter(&$page) {
@@ -33,3 +34,7 @@ function ponderosa_field__field_press_book_authors_editors__press_book($variable
 
   return $output;
 }
+
+// function ponderosa_process_page(&$variables) {
+//   $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
+//  }
