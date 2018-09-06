@@ -1,12 +1,14 @@
 <?php
 
 function ponderosa_preprocess(&$variables, $hook) {
-  //Attempting to make the images that appear to be 
+  //Attempting to make the images that appear to be
 }
 
 function ponderosa_page_alter(&$page) {
 }
 
+function ponderosa_preprocess_node(&$variables) {
+}
 function ponderosa_field__press_book($variables) {
  $output = '';
 

@@ -8,147 +8,8 @@
  *
  */
 
-@import "../../bootstrap/less/variables.less";
-@import "../../bootstrap/less/mixins.less";
-
-@font-face {
-  font-family: 'EksjaExtremesRegular';
-  src: url(//oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.eot);
-  src: local('☺'), url(//oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.woff) format('woff'),
-  url(//oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.ttf) format('truetype'),
-  url(//oregonstate.edu/osuhomepage/css/fonts/Eksja/Eksja-regular-webfont.svg#webfont) format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html {
-  background-color: @grayDarker;
-}
-
-body {
-  background: url('../../images/bg-pattern.jpg') repeat @sand;
-}
-
-#sidebar-first,
-#sidebar-second,
-#sidebar-first p,
-#sidebar-second p {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-h1, h2 {
-  font-family: @titleFontFamily;
-}
-
-h1 {
-  font-size: 30px;
-  color: @pine-stand;
-  margin: 0;
-  padding: 1em 0 0;
-}
-
-h1 a {
-  text-decoration: none;
-}
-
-.ie {
-  h1 a {
-    margin-left: 165px;
-  }
-  #header .parent {
-    margin-left: 165px; /* fixes ie7/8 issue parent site hiding behind tag */
-  }
-}
-
-.parent + h1 {
-  padding-top: 0;
-}
-
-/* This is from the parent item, that can be manually added to a theme */
-a.parent,
-.parent {
-  text-decoration: none;
-  font-style: italic;
-  font-size: 18px;
-  margin-top: 9px;
-  display: inline-block;
-}
-
-h2 {
-  font-size: 22px;
-  line-height: 32px;
-}
-
-#page-title {
-  font-size: 26px;
-}
-
-.front #page-title {
-  display: none;
-}
-
-h1, h2, h1 a {
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 120%;
-  margin: 18px 0 5px;
-}
-
-h2, h4 {
-  color: #c34500;
-}
-
-h4 {
-  font-size: 110%;
-  margin-bottom: .4em;
-}
-
-h5 {
-  font-size: 100%;
-  border-bottom: 1px dotted #666;
-  padding-bottom: .2em;
-  margin-bottom: .4em;
-}
-
-.block > h2 {
-    background: none repeat scroll 0 0 #373737;
-    border-radius: 3px 3px 0 0;
-    color: #ffffff;
-    font-family: 'Gudea',Arial,Helvetica,Verdana,sans-serif;
-    font-size: 16px !important;
-    font-weight: normal !important;
-    line-height: 30px;
-    margin-bottom: 18px;
-    padding: 0 10px;
-}
-.block > h2 > a {
-    color: #ffffff;
-    text-decoration: none;
-}
-// .region-sidebar-first > div,
-// .region-sidebar-second > div {
-//     border-bottom: medium none !important;
-// }
 
 
-a {
-  text-decoration: underline;
-}
-
-a:hover,
-a:active,
-a:focus {
-  color: #615042;
-}
-
-ul li {
-  list-style-image: url('../../images/bullet.png');
-  line-height: 20px;
-  margin-bottom: 6px;
-}
 
 /* List of exceptions to the li bullets */
 ul.horizontal-tabs-list li,
@@ -215,67 +76,6 @@ div.content {
   margin: .4em 0 1em;
 }
 
-#footer {
-  color: #fff;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 20px 0 20px 20px;
-  background: rgb(57,57,58); /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5MzkzYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNTI1MjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top,  rgba(57,57,58,1) 0%, rgba(37,37,37,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(57,57,58,1)), color-stop(100%,rgba(37,37,37,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(57,57,58,1) 0%,rgba(37,37,37,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(57,57,58,1) 0%,rgba(37,37,37,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(57,57,58,1) 0%,rgba(37,37,37,1) 100%); /* IE10+ */
-  background: linear-gradient(top,  rgba(57,57,58,1) 0%,rgba(37,37,37,1) 100%); /* W3C */
-  min-height: 148px;
-  border-top: 4px solid #DBD6D0;
-}
-
-.ie #footer {
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39393a', endColorstr='#252525',GradientType=0 ); /* IE6-8 */
-}
-
-#footer {
-  p {
-    font-size: 14px;
-  }
-  ul {
-    margin-left: 10px;
-    li {
-      list-style-image: none;
-    }
-  }
-  h2,
-  h3 {
-    color: #fff;
-    font-size: 120%;
-    margin-top: 0;
-    line-height: inherit;
-  }
-  a {
-    color: #fff;
-    &:hover, &:active, &:focus {
-      background-color: #666;
-      text-decoration: none;
-      border-radius: 3px;
-    }
-  }
-  .block-menu {
-    &+ .block-menu {
-      margin-left: 10px;
-    }
-    float: left;
-    a {
-      text-decoration: none;
-      font-size: 13px;
-    }
-    .content {
-      padding: 0;
-    }
-  }
-}
 
 blockquote {
   background: url('../../images/blockquote.jpg') center left no-repeat;
@@ -310,11 +110,6 @@ ul.contextual-links li a:focus {
   background-color: #eee;
 }
 
-#sidebar-first .region-sidebar-first > div,
-#sidebar-second .region-sidebar-second > div {
-  padding-bottom: 1em;
-  border-bottom: 1px solid #ccc;
-}
 #sidebar-first .region-sidebar-first > div + div,
 #sidebar-second .region-sidebar-second > div + div {
   margin-top: 1em;
@@ -378,124 +173,6 @@ ul.contextual-links li a:focus {
   }
 }
 
-/* New top hat styling */
-#osu-top-hat.new {
-  background: @sand;
-  height: 87px;
-  border-bottom: none;
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  &.container {
-    max-width: 1167px;
-  }
-  a {
-    padding: 0;
-    border-radius: 0;
-  }
-  img {
-    vertical-align: top;
-  }
-  .group-header {
-    display: inline-block;
-    margin-top: 18px;
-    padding-left: 20px;
-    h1 {
-      display: block;
-      padding: 0;
-    }
-  }
-  .parent,
-  a.parent {
-    color: #c34500;
-    font-size: 15px;
-    font-style: normal;
-    text-transform: uppercase;
-    margin-top: 0;
-    padding: 0;
-    &:active, &:focus, &:hover {
-      background: transparent;
-      text-decoration: underline;
-    }
-  }
-  h1 {
-    display: inline-block;
-    padding: 1.1em 1em 0 .5em;
-    a {
-      padding: 0;
-      color: #c34500;
-      border-radius:0;
-      &:active, &:focus, &:hover {
-        background: transparent;
-        text-decoration: underline;
-      }
-    }
-  }
-  #search-link {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    font-size: 24px;
-    color: @osu;
-    &:active, &:focus, &:hover {
-      background: @osu;
-      color: #fff;
-    }
-  }
-
-}
-
-/* Search overlay for new search within doug fir */
-#search-overlay {
-  display: none;
-  background: rgba(0,0,0,.86);
-  height: 90vh;
-  width: 100vw;
-  max-width: 100%; /* older browsers and linux seem to have an issue with 100 vw this fixes it */
-  position: absolute;
-  left: 0;
-  z-index: 999;
-  text-align: center;
-  #osu-search-top-hat-form {
-    text-align: center;
-    margin-top: 40px;
-    .form-item {
-      display: inline-block;
-    }
-    .search-terms {
-      height: 2em;
-      width: 10em;
-      font-size: 1.6em;
-      line-height: 1.6em;
-      padding-left: .7em;
-      border-radius: 0;
-    }
-    input.form-submit {
-      background: @osu url('../../images/search.png') no-repeat 50% 50%;
-      border-radius: 0;
-      box-shadow: 0;
-      margin: 0 0 0 -3px;
-      font-size: 2em;
-      width: 1.6em;
-      top: 2px;
-      position: relative;
-      font-family: FontAwesome, Gudea, sans-serif;
-      padding: 11px;
-      border: none;
-    }
-  }
-  .exit-search {
-    background: #000;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px;
-    &:hover, &:active, &:focus {
-      background: #fff;
-      color: #000;
-    }
-  }
-}
-
 /* Hide these if we are not using responsive stylesheet */
 #alt-menu,
 #alt-tag,
@@ -552,81 +229,69 @@ a .icon-rss {
 }
 
 //Adds the background to the page
-#page-wrapper{
-  background: linear-gradient(#ffffff00, #e7ddd3);
-}
+@import "../../bootstrap/less/mixins.less";
+@import "../../bootstrap/less/variables.less";
 
-//Removes the default search icon that comes with OSU theme.
-#search-link{
-  display: none;
-}
+@import "base/variables.less";
+@import "base/typography.less";
+@import "base/reset.less";
+@import "base/base.less";
 
-/*
-  On the main page, in the main content area there was a
-  huge amount of space on the top and bottom of the
-  paragraph region. This targets specifically that area,
-  and removes the exessive space.
-*/
-#main-column{
-  .span12{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    #content{
-      margin-bottom: 0px;
-      .content{
-        margin: 0px;
-        .content{
-          margin: 0px;
-          .span12{
-            margin: 0px;
-            padding: 0px;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-/* Utils import */
+@import "components/book_cover.less";
+@import "components/box_header.less";
+@import "components/box-content.less";
+@import "components/box_shadow.less";
+@import "components/box.less";
+@import "components/icon.less";
+@import "components/section_header.less";
+@import "components/search-bar.less";
+@import "components/full_top_background.less";
+@import "components/image-wrapper.less";
+@import "components/shopping-cart.less";
+/* Utils import
 @import "utils/variables.less";
 @import "utils/utils.less";
-@import "utils/typography.less";
+@import "utils/typography.less"; */
 
 /* Components import */
-@import "components/quick-tabs.less";
-@import "components/forms.less";
-@import "components/tables.less";
-@import "components/horizontal-menus.less";
-@import "components/vertical-menus.less";
-@import "components/accordion.less";
-@import "components/footer-menus.less";
-@import "components/helpers.less";
-@import "components/widgets.less";
-@import "components/progress-bars.less";
-@import "components/side-boxes.less";
-@import "components/main-page-header.less";
-@import "components/icon.less";
+@import "doug_fir_components/quick-tabs.less";
+@import "doug_fir_components/forms.less";
+@import "doug_fir_components/tables.less";
+@import "doug_fir_components/horizontal-menus.less";
+@import "doug_fir_components/vertical-menus.less";
+@import "doug_fir_components/accordion.less";
+@import "doug_fir_components/footer-menus.less";
+@import "doug_fir_components/helpers.less";
+@import "doug_fir_components/widgets.less";
+@import "doug_fir_components/progress-bars.less";
+@import "doug_fir_components/footer.less";
+@import "doug_fir_components/list-bullets.less";
+@import "doug_fir_components/osu-top-hat.less";
 
-/* Views import */
+
+/* Views import
 @import "views/blog.less";
 @import "views/vertical_book_display.less";
-@import "views/vertical_season_view.less";
 @import "views/book_carousel.less";
 @import "views/book_grid.less";
 @import "views/catalog_display.less";
 @import "views/horizontal_blog_teaser.less";
+@import "views/titles-list.less";*/
 @import "views/book_display_set_grid.less";
-@import "views/titles-list.less";
+@import "views/vertical_season_view.less";
 
 /* Layouts import */
 @import "layouts/bootstrap_responsive.less";
+@import "layouts/flex_layouts.less";
+@import "layouts/flex-grid.less";
 
-/* Blocks import */
+/* Blocks import
 @import "blocks/search.less";
 @import "blocks/shopping.less";
-@import "blocks/connect.less";
+@import "blocks/connect.less";*/
 
-/* Nodes import */
+/* Nodes import
+@import "nodes/press-author.less";*/
 @import "nodes/press-book.less";
-@import "nodes/press-author.less";
+
+@import "regions/sidebar-first.less";

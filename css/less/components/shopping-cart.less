@@ -1,0 +1,23 @@
+.shopping-cart {
+  height: 120px;
+  width: auto;
+  border-radius: 60px;
+  color: @secondary-background;
+  background-color: @main;
+  transition: width 1s;
+  .text {
+    color: @secondary-background;
+    transition-property: display;
+    transition-duration: .5s;
+    * {
+      color: @secondary-background;
+    }
+  }
+  .icon {
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: @secondary-background;
+    height: 2em;
+  }
+}
