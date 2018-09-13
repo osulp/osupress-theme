@@ -79,25 +79,8 @@
     </div>
   </div>
   <div class="row-fluid responsive">
-    <!-- If reviews is set, make the book description smaller, else, have it span9 -->
-    <?php if (isset($content["field_press_reviews"])): ?>
-      <div class="span7 sm-12">
-        <?php print render($content["field_press_book_description"]); ?>
-      </div>
-      <div class="span5 sm-12">
-        <div class="side-box box-shadow">
-          <div class="side-box-title">
-            <h2 id="reviews">Reviews</h2>
-          </div>
-          <div class="side-box-item">
-            <?php print render($content["field_press_reviews"]); ?>
-          </div>
-        </div>
-      </div>    
-    <?php else: ?>
       <div class="span10 sm-12" id="widerBookDescription">
         <?php print render($content["field_press_book_description"]); ?>
       </div> 
-    <?php endif ?>
   </div>
 </div>
