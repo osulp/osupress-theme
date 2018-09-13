@@ -1,74 +1,13 @@
-#pre-footer{
-  background: none;
-}
-
-
-.vertical-season-display {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  .view-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .vertical-season-row {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 20px;
-    padding: 0px;
-    border-radius: 5px;
-    background: @bucktooth-white;
-    h2{
-      background: @pine-stand;
-    }
-    h3 a{
-      color: @link-color !important;
-    }
-    ul {
-      list-style-type: none;
-      li {
-        list-style-image: none;
-        border-top: 1px solid #dddddd;
-        margin: 0px;
-      }
-    }
-    .item-list {
-      width: 100%;
-    }
-    .vertical-book-col.span6 {
-      display: flex;
-      min-height: 0px;
-      padding: 0px;
+@media screen and (max-width: 1400px) {
+  .vertical-season-display {
+    .content-row {
       flex-direction: column;
-      &.right {
-        * {
-          flex-basis: 25%;
-        }
+      & > .flex-col > .flex-row {
+        justify-content: center;
       }
-      &.left {
-        align-items: center;
-        .field-items {
-          flex-basis: 66%;
-          a{
-            color: @link-color;
-            }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .view-content {
-      flex-wrap: wrap;
-      .vertical-season-row {
-        width: 100%;
-        .vertical-book-col {
-          align-items: center;
-        }
+      .flex-grid {
+        justify-content: center;
       }
     }
   }
 }
-@import "../utils/variables.less";
