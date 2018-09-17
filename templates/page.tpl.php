@@ -116,13 +116,15 @@
   } else { // Render the new tophat
 ?>
 <div id="osu-top-hat" class="new <?php echo $container ?>">
-  <?php echo get_logo($logo_path); ?>
+  <div class="headers flex-row align-center">
+    <?php echo get_logo($logo_path); ?>
+    <?php echo $doug_fir_headers->header; ?>
+  </div>
   <span class="mobile-header"><a href="//www.oregonstate.edu">OREGON STATE UNIVERSITY</a></span>
   <a href='<?php echo $base_path; ?>search/osu' id="search-link" class="m-icon-link">
       <i class="icon-search"></i><span class="sr-only">Open search box</span>
   </a>
 </div>
-  <?php echo $doug_fir_headers->header; ?>
 <?php } // end rendering new tophat ?>
 <div id="mobile-icon-menu">
   <a href='#' id="toggle-mobile-menu" class="m-icon-link">
