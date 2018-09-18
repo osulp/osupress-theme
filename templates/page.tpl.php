@@ -173,7 +173,7 @@
     <!-- Full width top region -->
     <?php if ($page['full_top']): ?>
       <div class='row-fluid'>
-        <div id='full-top' class='span12'>
+        <div id='full-top' style="background-image: url(<?php print theme_get_setting('search_background_path') ?>);" class='span12'>
           <?php print render($page['full_top']); ?>
         </div>
       </div>

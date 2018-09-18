@@ -46,6 +46,7 @@ features[] = name
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
+features[] = search_background_path
 
 ; Theme variants
 ; default_variant     = 'doug_fir'
