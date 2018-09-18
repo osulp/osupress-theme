@@ -223,7 +223,7 @@
             <?php if ($page['content']): ?>
               <?php print render($title_prefix); ?>
               <?php if ( (($title) && !($is_front)) || $node->type == 'feature_page' ) { ?>
-                <h2 class="title" id="page-title">
+                <h2 class="section-header" id="page-header">
                   <?php print decode_entities($title); ?>
                 </h2>
               <?php } ?>

@@ -7,14 +7,14 @@
       <img src="<?php print file_create_url($content['field_press_book_cover']['#items'][0][uri]); ?>">
     </div>
     <div class="span7 sm-12">
-      <h2 class="main-page-header"><?php print render($title); ?></h2>
+      <h2 class="section-header"><?php print render($title); ?></h2>
       <div class="row-fluid">
         <div class="span12">
-          <h3><?php print render($content["field_press_book_subtitle"]); ?></h3>
+          <h3 class="section-subheader"><?php print render($content["field_press_book_subtitle"]); ?></h3>
           <?php print render($content["field_press_series"]); ?>
-          
+
           <?php print render($content["field_press_book_authors_editors"]) ?>
-        </div>  
+        </div>
           <div class="span" id="details">
             <!-- If status description or field press status is set, display the status description, and disable the buy option. -->
             <?php if ($content["field_press_status_description"] || $content["field_press_status"]):?>
@@ -27,11 +27,11 @@
               <!-- If Hardcover ISBN is set, then show buy information, but if the Publishing status of the book is unavailavle, disable the buy button. -->
               <?php if ($content["field_press_book_hardcover_isbn"]): ?>
                 <div class="span10">
-                    <p><?php print "<strong>Hardcover</strong> ISBN: " . $content['field_press_book_hardcover_isbn']['#items'][0]['value'] . ". $" . $content['field_press_book_hc_price']['#items'][0]['value'] ?></p>        
+                    <p><?php print "<strong>Hardcover</strong> ISBN: " . $content['field_press_book_hardcover_isbn']['#items'][0]['value'] . ". $" . $content['field_press_book_hc_price']['#items'][0]['value'] ?></p>
                 </div>
                 <div class="span1">
-                    <p><?php print "<a href ='https://cdcshoppingcart.uchicago.edu/Cart2/Cart?ISBN=" . $content['field_press_book_hardcover_isbn']['#items'][0]['value'] . "&PRESS=orsu'><button type='button' class='btn btn-primary buy'>Buy</button></a>" ?></p>       
-                </div>                 
+                    <p><?php print "<a href ='https://cdcshoppingcart.uchicago.edu/Cart2/Cart?ISBN=" . $content['field_press_book_hardcover_isbn']['#items'][0]['value'] . "&PRESS=orsu'><button type='button' class='btn btn-primary buy'>Buy</button></a>" ?></p>
+                </div>
               <?php endif ?>
 
               <!-- If Paper ISBN is set, then show buy information, but if the Publishing status of the book is unavailavle, disable the buy button. -->
@@ -40,9 +40,9 @@
                     <p><?php print "<strong>Paper</strong> ISBN: " . $content['field_press_book_paper_isbn']['#items'][0]['value'] . ". $" . $content['field_press_book_paper_price']['#items'][0]['value'] ?></p>
                 </div>
                 <div class="span1">
-                    <p><?php print "<a href ='https://cdcshoppingcart.uchicago.edu/Cart2/Cart?ISBN=" . $content['field_press_book_paper_isbn']['#items'][0]['value'] . "&PRESS=orsu'><button type='button' class='btn btn-primary buy'>Buy</button></a>" ?></p>       
-                </div> 
-              <?php endif ?>    
+                    <p><?php print "<a href ='https://cdcshoppingcart.uchicago.edu/Cart2/Cart?ISBN=" . $content['field_press_book_paper_isbn']['#items'][0]['value'] . "&PRESS=orsu'><button type='button' class='btn btn-primary buy'>Buy</button></a>" ?></p>
+                </div>
+              <?php endif ?>
 
               <!-- If Ebbok ISBN is set, then show buy information, but if the Publishing status of the book is unavailavle, disable the buy button. -->
               <?php if ($content["field_press_book_ebook_isbn"]): ?>
@@ -53,12 +53,12 @@
                 <div class="span1">
                     <p><?php print "<a href ='https://cdcshoppingcart.uchicago.edu/Cart2/Cart?ISBN=" . $content['field_press_e_book_isbn']['#items'][0]['value'] . "&PRESS=orsu'><button type='button' class='btn btn-primary buy'>Buy</button></a>" ?></p>
                   <?php endif ?>
-                </div>  
+                </div>
               <?php endif ?>
- 
+
               <!-- Only show this span if the Trim Size OR dInclusion Data List OR Pages is set, otherwise don't display it. -->
               <?php if ($content["field_press_book_ebook_isbn"] or $content["field_press_trim_size"] || $content["field_press_pages"]): ?>
-                <div class="span12" id="pressbook_meta">        
+                <div class="span12" id="pressbook_meta">
                   <em>
                     <?php if ($content["field_press_trim_size"]): ?>
                       <?php print ($content['field_press_trim_size']['#items'][0]['value'] )?>
@@ -70,7 +70,7 @@
                       <?php print ($content['field_press_pages']['#items'][0]['value'] . " pages.")?>
                     <?php endif ?>
                   </em>
-                </div> 
+                </div>
               <?php endif ?>
 
             <?php endif ?>
@@ -81,6 +81,6 @@
   <div class="row-fluid responsive">
       <div class="span10 sm-12" id="widerBookDescription">
         <?php print render($content["field_press_book_description"]); ?>
-      </div> 
+      </div>
   </div>
 </div>
