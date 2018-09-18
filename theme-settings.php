@@ -108,7 +108,7 @@ function ponderosa_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'          => 'textfield',
     '#title'         => t('Search background image'),
     '#default_value' => theme_get_setting('search_background_path'),
-    '#description'   => t('Set the path to the search background image.'),
+    '#description'   => t('Set the path to the search background image. Enter the path from the base of the site folder with no preceeding forward slash i.e. "sites/all/default/files/background_image.png".'),
   );
 
   // Option - Use responsive layout
