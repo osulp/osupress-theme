@@ -52,7 +52,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div class="view-content flex-row">
+    <div class="view-content flex-row flex-wrap">
       <?php print $rows; ?>
     </div>
   <?php elseif ($empty): ?>
