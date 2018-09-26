@@ -19,16 +19,10 @@
   */
   ?>
   <?php if(!empty($field_press_author_picture)) : ?>
-  
-    <div class="">
-      <div class="">
         <?php print render($content["field_press_author_picture"]); ?>
-      </div>
-    </div>
     <div class="span8">
       <?php print $field_press_author_biography[0]["value"];?>
     </div>
-
   <?php
   /*
   * Display a 11 column when the press_book_author has no picture
@@ -38,6 +32,5 @@
       <div class="span10">
         <?php print $field_press_author_biography[0]["value"];?>
       </div>
-    
 <?php endif;?>
 </div>
