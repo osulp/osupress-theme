@@ -2,6 +2,8 @@
 
 Before adding new content, make sure you are logged in. Go to `dev.osupress.oregonstate.edu/user` and log in with your ONID account. When logged in, you should see a navigation menu at the top of the screen. If that menu does not include a `Content` option, check with a site administrator to make sure you have the correct permissions.
 
+Keep in mind as you are adding content that many parts of the site are cached at an hourly interval. If your changes do not show up initially, wait an hour and check again.
+
 ## Part 1: Adding Authors
 If you are going to add book whose author has not previously been added to the site, you will need to complete this step first.
 
