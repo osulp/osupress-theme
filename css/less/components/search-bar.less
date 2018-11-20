@@ -14,8 +14,8 @@
     color: #888888;
     font-size: 22px;
   }
-  // hides show small by default
-  .show-small {
+  // hides show small by default 
+ .show-small {
     display: none;
   }
   // hides show large when input is focused
@@ -42,6 +42,10 @@
       vertical-align: baseline;
     }
   }
+}
+
+.show-large, .show-small {
+  pointer-events: none;
 }
 
 @media screen and (max-width: 570px) {

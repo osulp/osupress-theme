@@ -1,3 +1,4 @@
 *.swp
 *.css
 css/less/.DS_Store
+.DS_Store
