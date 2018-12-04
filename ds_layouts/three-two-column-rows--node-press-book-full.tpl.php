@@ -11,9 +11,9 @@
       <div class="row-fluid">
         <div class="span12">
           <h3 class="section-subheader"><?php print render($content["field_press_book_subtitle"]); ?></h3>
-          <?php print render($content["field_press_series"]); ?>
-
           <?php print render($content["field_press_book_authors_editors"]) ?>
+          <?php print render($content["field_press_book_add_contribs"]) ?>
+          <?php print render($content["field_press_series"]); ?>
         </div>
           <div class="span" id="details">
             <!-- If status description or field press status is set, display the status description, and disable the buy option. -->
